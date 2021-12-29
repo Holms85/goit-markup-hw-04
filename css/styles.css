@@ -175,6 +175,14 @@ header .container {
 
 .hero {
   background-color: var(--hero-bg-col);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -314,6 +322,37 @@ header .container {
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-bottom: 16px;
+}
+
+.teams-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.teams-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.teams-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+}
+
+.teams-social-icon {
+  fill: currentColor;
+}
+
+.teams-social-link:hover,
+.teams-social-link:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
 }
 
 .teams-thumb {
@@ -376,6 +415,23 @@ header .container {
 .address-tel:focus {
   color: var(--accent-color);
 }
+
+/* footer .container {
+  display: inline-block;
+}
+
+.footer-title {
+  font-weight: 700px;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-social-list {
+  display: flex;
+} */
 
 /* -----------------PORTFOLIO BODY------------------------- */
 
