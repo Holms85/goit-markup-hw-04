@@ -152,14 +152,14 @@ header .container {
   margin-left: auto;
 }
 
-.header-mail::before {
-  content: "";
-  width: 16px;
-  height: 12px;
-  background-image: url(../images/smartphone.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.header-mail-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header-tell-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .header-mail,
@@ -192,7 +192,7 @@ header .container {
     url(../images/Hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -230,6 +230,17 @@ header .container {
 }
 
 /* ---------------- направления----------------- */
+
+.vectors-icon {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .vektors {
   background: var(--second-body-bg-color);
@@ -374,12 +385,70 @@ header .container {
   text-align: center;
 }
 
+/* -------------- OUR CLIENTS----------------- */
+
+.clients-title {
+  font-weight: 700px;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-thumb {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-link {
+  padding: 16px 32px;
+  color: #afb1b8;
+}
+
+.client-logo-icon {
+  fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+}
+
+.clients-thumb:hover,
+.clients-thumb:focus {
+  border: 1px solid var(--accent-color);
+}
+
 /* ---------------футер------------------------- */
 
 .footer-page {
   background-color: var(--hero-bg-col);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-thumb {
+  margin-right: 70px;
 }
 
 .footer-logo-one {
@@ -438,7 +507,7 @@ header .container {
   flex-wrap: wrap;
 }
 
-. .footer-title {
+.footer-title {
   font-weight: 700px;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -447,6 +516,7 @@ header .container {
   color: #ffffff;
   margin-bottom: 20px;
   display: flex;
+  align-items: center;
 }
 
 .footer-social-list {
@@ -514,6 +584,12 @@ header .container {
   color: var(--main-title-color);
 }
 
+.photo-item-btn:hover,
+.photo-item-btn:focus {
+  box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+    0px 3px 1px 0px #0000001a;
+}
+
 .photo-list {
   display: flex;
   flex-wrap: wrap;
@@ -530,6 +606,12 @@ header .container {
   margin-right: 30px;
   margin-bottom: 30px;
   flex-basis: calc(100% / 3 - 30px);
+}
+
+.photo-item:hover,
+.photo-item:focus {
+  box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
+    0px 1px 1px 0px #0000001f;
 }
 
 .photo-thumb {
