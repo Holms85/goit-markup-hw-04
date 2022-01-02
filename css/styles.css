@@ -152,6 +152,16 @@ header .container {
   margin-left: auto;
 }
 
+.header-mail::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  background-image: url(../images/smartphone.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .header-mail,
 .header-tel {
   font-weight: 500;
@@ -371,7 +381,10 @@ header .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer-logo-one {
+  width: 145px;
+  height: 31px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -383,6 +396,8 @@ header .container {
   color: var(--footer-logo);
 }
 .footer-address {
+  width: 231px;
+  height: 81px;
   font-style: inherit;
   margin-top: 20px;
 }
@@ -416,22 +431,51 @@ header .container {
   color: var(--accent-color);
 }
 
-/* footer .container {
-  display: inline-block;
+.footer-social-div {
+  width: 206px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.footer-title {
+. .footer-title {
   font-weight: 700px;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 20px;
+  display: flex;
 }
 
 .footer-social-list {
   display: flex;
-} */
+  justify-content: center;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-icon {
+  fill: #ffffff;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
 
 /* -----------------PORTFOLIO BODY------------------------- */
 
