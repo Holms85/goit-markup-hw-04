@@ -152,6 +152,12 @@ header .container {
   margin-left: auto;
 }
 
+.header-mail,
+.header-tel {
+  display: flex;
+  align-items: center;
+}
+
 .header-mail-icon {
   margin-right: 10px;
   fill: currentColor;
@@ -184,15 +190,13 @@ header .container {
 /* ---------------секция герой -------------------*/
 
 .hero {
+  max-width: 1600px;
   background-color: var(--hero-bg-col);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/Hero-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -402,23 +406,24 @@ header .container {
   justify-content: center;
 }
 
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
+
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-thumb {
-  width: 170px;
-  height: 92px;
+.clients-link {
+  width: 100%;
+  height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  color: #afb1b8;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.clients-link {
-  padding: 16px 32px;
-  color: #afb1b8;
 }
 
 .client-logo-icon {
@@ -428,10 +433,6 @@ header .container {
 .clients-link:hover,
 .clients-link:focus {
   color: var(--accent-color);
-}
-
-.clients-thumb:hover,
-.clients-thumb:focus {
   border: 1px solid var(--accent-color);
 }
 
@@ -445,6 +446,7 @@ header .container {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-thumb {
@@ -500,23 +502,14 @@ header .container {
   color: var(--accent-color);
 }
 
-.footer-social-div {
-  width: 206px;
-  height: 80px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .footer-title {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-  display: flex;
-  align-items: center;
 }
 
 .footer-social-list {
@@ -574,18 +567,15 @@ header .container {
   background-color: var(--portfolio-btn-bg-color);
   color: var(--primary-text-color);
   cursor: pointer;
-  border-radius: 4px;
   padding: 4px 22px;
+  border-radius: 4px;
+  border: none;
 }
 
 .photo-btn:hover,
 .photo-btn:focus {
   background-color: var(--accent-color);
   color: var(--main-title-color);
-}
-
-.photo-item-btn:hover,
-.photo-item-btn:focus {
   box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
     0px 3px 1px 0px #0000001a;
 }
@@ -597,7 +587,11 @@ header .container {
   margin-bottom: -30px;
 }
 
-.photo-item > a > img {
+/* .photo-item > a > img {
+  display: block;
+} */
+
+.photo-link {
   display: block;
 }
 
@@ -608,8 +602,8 @@ header .container {
   flex-basis: calc(100% / 3 - 30px);
 }
 
-.photo-item:hover,
-.photo-item:focus {
+.photo-link:hover,
+.photo-link:focus {
   box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
     0px 1px 1px 0px #0000001f;
 }
